@@ -1,0 +1,447 @@
+/*Definisci lo stile dei caratteri*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&family=Source+Sans+Pro:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital@1&display=swap');
+
+h1{
+    font-size: 54px;
+    line-height: 60px;
+    font-family:'Alegreya';
+    font-weight: 700;
+    font-style: italic;
+}
+h2{
+    font-size: 36px;
+    line-height: 40px;
+    font-family: 'Alegreya';
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+}
+h3{
+    font-size: 26px;
+    line-height: 30px;
+    font-family: 'Alegreya';
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+}
+
+h4{
+    font-family: 'Alegreya';
+    font-weight: 600;
+    text-align: center;
+}
+
+
+
+h4,
+p{
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+    font-family:'Alegreya';
+}
+
+.cit{
+    font-style: italic;
+}
+
+img{
+    max-width: 100%;
+}
+
+.body{
+    margin: 3px;
+}
+
+.main{
+    overflow: hidden;
+    /*background: content-box linear-gradient(0.75turn, rgb(16, 0, 1), white, rgb(16, 0, 1));*/
+    background: linear-gradient(to left, rgb(20, 0, 1) 0.2%, white 50%, white 7%, rgb(20, 0, 1) 99.8% )
+   /*background: linear-gradient(to left,
+       lime 20%, red 30% 45%, cyan 55% 70%, yellow 80% );*/
+}
+
+
+
+@media screen and (min-width:660px){
+    .main{
+        
+        background: linear-gradient(to left, rgb(20, 0, 1) 10%, white 50%, white 7%, rgb(20, 0, 1) 90% )
+       
+    } 
+}
+/*Classi per creare l'intestazione*/
+.header{
+    color: white;
+    background-image: url(./Elaborati/Sfondo\ intestazione.jpg);
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: 100% 22%;
+    position: center;
+    padding-top: 160px;
+    padding-bottom: 160px;    
+}
+
+.navigazione-header{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    transition: 0.5s;
+
+}
+/*
+@media screen and (ma:650px) {
+    .navigazione-header{
+        left: auto;
+    }*/
+
+.navigazione-header ul{
+    list-style: none;
+    text-align: center;
+    padding: 0%;
+    
+}
+
+.navigazione-header li{
+    /*background-color: linear-gradient(rgb(117, 0, 0) rgb(70, 0, 0));*/
+    background:rgb(70, 0, 0);
+}
+.navigazione-header li :hover {
+    /*background-color: linear-gradient(rgb(117, 0, 0) rgb(70, 0, 0));*/
+    background:rgb(117, 0, 0);
+}
+
+.elemento-navigazione{
+    display: inline-block;
+    padding: 5px;
+    font-family: "Alegreya";
+    font-style: normal;
+}
+
+.elemento-navigazione a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+.info-principali {
+    max-width: 600px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+
+}
+
+.contenitore-avatar {
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 4px solid rgb(117, 0, 0);
+}
+
+.avatar {
+    width: 175%;
+    height: 175%;
+    object-fit: cover;
+    margin-top: -75px;
+}
+
+/*Fine classi intestazione*/
+
+/*Classi per il corpo centrale*/
+
+.inner {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: -80px;
+    z-index: 1;
+    /*background-color: white;*/
+
+}
+
+.contenitore-bio{
+    max-width: 900px;
+    /*display: flex;*/
+    border: 1px solid rgba(0, 0, 0, 1);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 1);
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: whitesmoke;
+    margin-bottom: 70px;
+    border-radius: 3px;
+
+}
+
+.about{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    border-right: 0;
+}
+
+.colonne-2{
+    /*flex-basis: 50%;
+    width: 50%;*/
+    padding: 40px
+}
+
+@media screen and (min-width:650px){
+    .contenitore-bio{
+        display: flex;
+    }
+
+    .about{
+        border-right: 2px solid rgba(0, 0, 0, 0.2);
+        border-bottom: 0;
+    }
+
+    .colonne-2{
+        flex-basis: 50%;
+        width: 50%;
+        /*padding: 40px*/
+    }
+
+}
+
+
+.lavori{
+    /*display: flex;*/
+    gap: 40px 4%;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+.lavoro{
+    /*lex-basis: 22%;*/
+    margin-bottom: 0%;
+    /*border-radius: 3px;*/
+}
+
+.lavoro-2{
+    /*flex-basis: 48%;*/
+    margin-bottom: 0%;
+}
+
+.lavoro:first-child{
+    flex-basis: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contenitore-immagini-lavoro{
+    position:relative;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.immagine-lavoro{
+    border-radius: 3px;
+}
+
+@media screen and (min-width:650px){
+    .lavori{
+        display: flex;
+    }
+
+    .lavoro{
+        flex-basis: 22%;
+        margin-bottom: 0%;
+        border-radius: 3px;
+    }
+    
+    .lavoro-2{
+        flex-basis: 48%;
+        margin-bottom: 0%;
+    }
+    
+    .lavoro:first-child{
+        flex-basis: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .contenitore-immagini-lavoro{
+        position:relative;
+        width: 100%;
+        border-radius: 3px;
+    }
+    
+    .immagine-lavoro{
+        border-radius: 3px;
+    }
+
+
+}
+
+.lavoro h3{
+    font-family: "Philosopher";
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: -24px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding-left: 6px;
+    width: fit-content;
+    font-style: normal;
+}
+.lavoro-2 h3{
+    font-family: "Philosopher";
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: -24px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding-left: 6px;
+    width: fit-content;
+    font-style: normal;
+}
+
+.percorso{
+    /*display: flex;*/
+    margin-bottom: 80px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 1);
+    transition: all 0.5s;
+    position: relative;
+    background-color: whitesmoke;
+   
+}
+
+@media screen and (min-width: 650px){
+    .percorso{
+        display: flex; 
+        border-radius: 3px;
+    }
+    
+    .percorso:nth-child(odd) .data-percorso{
+    order: 1;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    }
+
+    .percorso:nth-child(even) .data-percorso{
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+    }
+}
+
+.percorso:hover{
+    box-shadow:10px 10px 60px rgba(0, 0, 0, 1);
+} 
+
+.percorso:hover .data-percorso{
+    background: rgb(117, 0, 0);
+}
+
+
+
+.percorso:after{
+    content:"";
+    height: 80px;
+    border-left: 3px dotted rgb(117, 0, 0);
+    position:absolute;
+    bottom: -80px;
+    left: 50%;
+}
+
+.percorso:last-child::after{
+    content:none;
+}
+
+
+.data-percorso{
+    flex-basis: 30%;
+    background: rgb(70, 0, 0);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: whitesmoke;
+}
+
+.data-titolo{
+    font-size: 24px;
+    line-height: 30px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.data-sottotitolo{
+    font-size: 36px;
+    line-height: 40px;
+    padding-bottom: 10px;
+    /*text-transform: uppercase;*/
+    font-weight: bold;
+}
+.data-separatore{
+    border-bottom: 1.5px solid;
+    width: 70%;
+    color: whitesmoke;
+}
+
+.contenuto-percorso{
+    flex-basis: 70%;
+    padding: 20px;
+
+}
+
+.contenuto-percorso h3{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+.footer{
+    background-color: rgb(117, 0, 0);
+    margin: 0px;
+}
+
+.footer a{
+    color:whitesmoke;
+    text-decoration: none;
+}
+
+.footer h2{
+    color:whitesmoke;
+    font-style: normal;
+    margin-top: 5px;
+    margin-bottom: 8px;
+}
+
+.footer p{
+    color: whitesmoke;
+}
+
+.contatti{
+    max-width: 600;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.social{
+    fill:whitesmoke;
+    max-width: 32px;
+    display:inline-block;
+    margin-right: 10PX;
+    margin-bottom: -10px;
+}
